@@ -66,16 +66,16 @@ p {
 }
 .btn:hover {
 	color: white;
-	background-color: #2F9E41;
+	background-color: #2F9E41
 }
 
 .brand h1 {
 	font-size: 3rem;
 	text-transform: uppercase;
-	color: #2F9E41;
+	color: white;
 }
 .brand h1 span {
-	color: white;
+	color: #2F9E41;
 }
 
 #header {
@@ -221,6 +221,7 @@ p {
 	justify-content: center;
 	flex-wrap: row;
 	margin-top: 50px;
+	margin-bottom: 6rem;
 }
 #cronograma .cronograma-item {
 	flex-basis: 80%;
@@ -328,13 +329,8 @@ footer  {
 .footer-list {
 	display: flex;
 	flex-direction: column;
-	gap: 0.6rem;
+	gap: 0.4rem;
 	list-style: none;
-}
-
-.footer-img img {
-    width: 250px;
-    height: 150px;
 }
 
 .footer-list .footer-link {
@@ -344,6 +340,16 @@ footer  {
 
 .footer-list .footer-link:hover {
 	color: #2F9E41;
+}
+
+.footer-list img {
+	height: 40px;
+	width: 185px;
+}
+
+#footer-content {
+    display: flex;
+    justify-content:space-around;
 }
 
 #instagram {

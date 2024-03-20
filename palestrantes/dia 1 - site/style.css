@@ -1,0 +1,394 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap');
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 10px;
+	font-family: 'Montserrat', sans-serif;
+	scroll-behavior: smooth;
+}
+
+
+a {
+	text-decoration: none;
+}
+
+p {
+	color: white;
+	font-size: 1.4rem;
+	margin-bottom: 15px;
+	line-height: 2.5rem;
+	font-weight: 300;
+	letter-spacing: 0.05rem;
+    text-align: center;
+}
+
+.container {
+	min-height: 100vh;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.btn-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.section-title {
+	font-size: 4rem;
+	color: black;
+	margin-bottom: 10px;
+	text-transform: uppercase;
+	letter-spacing: 0.2rem;
+	text-align: center;
+}
+
+.btn {
+	display: inline-block;
+	padding: 10px 30px;
+	color: white;
+	background-color: transparent;
+    border-radius: 30px;
+	border:solid #2F9E41;
+	font-size: 2rem;
+	text-transform: uppercase;
+	letter-spacing: 0.1rem;
+	margin-top: 30px;
+	transition: 0.3s ease;
+	transition-property: background-color, color;
+	
+}
+.btn:hover {
+	color: white;
+	background-color: #2F9E41;
+}
+
+.brand h1 {
+	font-size: 3rem;
+	text-transform: uppercase;
+	color: #2F9E41;
+}
+.brand h1 span {
+	color: white;
+}
+
+#header {
+	position: fixed;
+	z-index: 1000;
+	left: 0;
+	top: 0;
+	width: 100vw;
+	height: auto;
+}
+
+#header .header {
+	min-height: 8vh;
+	background-color: black;
+
+}
+
+#header .nav-bar {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	height: 100%;
+	max-width: 1400px;
+	padding: 0 10px;
+}
+
+#header .nav-list ul {
+	list-style: none;
+	position: absolute;
+	background-color: black;
+	width: 100vw;
+	height: 100vh;
+	left: 100%;
+	top: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	z-index: 1;
+	overflow-x: hidden;
+	transition: 0.5s ease left;
+}
+#header .nav-list ul.active {
+	left: 0%;
+}
+#header .nav-list ul a {
+	font-size: 2.5rem;
+	font-weight: 500;
+	letter-spacing: 0.2rem;
+	text-decoration: none;
+	color: white;
+	text-transform: uppercase;
+	padding: 20px;
+	display: block;
+}
+
+#header .nav-list ul li:hover a::after {
+	transform: translate(-50%, -50%) scale(1);
+	letter-spacing: initial;
+}
+#header .nav-list ul li:hover a {
+	color:#2F9E41;
+}
+#header .hamburger {
+	height: 60px;
+	width: 60px;
+	display: inline-block;
+	border: 3px solid white;
+	border-radius: 50%;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 100;
+	cursor: pointer;
+	transform: scale(0.8);
+	margin-right: 20px;
+}
+
+#header .hamburger .bar {
+	height: 2px;
+	width: 30px;
+	position: relative;
+	background-color: white;
+	z-index: -1;
+}
+#header .hamburger .bar::after,
+#header .hamburger .bar::before {
+	content: '';
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	left: 0;
+	background-color: white;
+	transition: 0.3s ease;
+	transition-property: top, bottom;
+}
+#header .hamburger .bar::after {
+	top: 8px;
+}
+#header .hamburger .bar::before {
+	bottom: 8px;
+}
+#header .hamburger.active .bar::before {
+	bottom: 0;
+}
+#header .hamburger.active .bar::after {
+	top: 0;
+}
+
+#home {
+	background-image:url(midia/img/fundo.png);
+	background-size: cover;
+	background-position: top center;
+	position: relative;
+	z-index: 1;
+	align-items: center;
+}
+
+#home::after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	opacity: 0.7;
+	z-index: -1;
+}
+
+#home .text h1 {
+	font-weight: 500;
+    color: white;
+	letter-spacing: 0.2rem;
+	text-align: center;
+    font-size: 4rem;
+}
+
+#cronograma .cronograma-bottom {
+	display: flex;
+	align-items: stretch;
+	justify-content: center;
+	flex-wrap: row;
+	margin-top: 50px;
+}
+#cronograma .cronograma-item {
+	flex-basis: 80%;
+	display:flex;
+	align-items: flex-start;
+	justify-content: start;
+	flex-direction:column;
+	padding: 15px;
+	border-radius: 20px;
+	background-size: cover;
+	margin: 00px 5%;
+	position: relative;
+	z-index: 1;
+	overflow: hidden;
+}
+
+#cronograma .cronograma-item::after {
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	background-color: #2F9E41;
+	opacity: 0.9;
+	z-index: -1;
+}
+
+#cronograma .cronograma-item h2 {
+	font-size: 3rem;
+	color: white;
+	margin-bottom: 10px;
+	text-transform: uppercase;	
+}
+
+#cronograma .cronograma-item p {
+	color: white;
+    text-align: justify;
+}
+
+#about .about {
+	flex-direction: column;
+	text-align: center;
+	max-width: 1500px;
+	margin: 0 auto;
+	padding: 50px 30px;
+}
+
+#about .section-text p {
+	margin-bottom: 20px;
+	font-size: 1.5rem;
+    color: black;
+	padding-left: 100px;
+	text-align: center;
+}
+
+:root {
+	--color-neutral-0: #000000;
+	--color-neutral-10: #000000;
+	--color-neutral-30: #a8a29e;
+	--color-neutral-40: #f5f5f5f5;
+}
+
+footer  {
+	width: 100%;
+	color: var(--color-neutral-40);
+}
+
+.footer-link {
+	text-decoration: none;
+}
+
+#footer-content {
+	background-color: var(--color-neutral-10);
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	padding: 3rem 3.5rem;
+}
+
+#footer-contacts h2 {
+	margin-bottom: 0.75rem;
+}
+
+#footer-social-media {
+	display:flex;
+	gap: 2rem;
+	margin-top: 1.5rem;
+}
+
+#footer-social-media .footer-link {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 2.5rem;
+	width: 2.5rem;
+	color: var(--color-neutral-40);
+	border-radius: 50%;
+	transition: all 0.4s;
+}
+#footer-social-media .footer-link i {
+	font-size: 1.25rem;
+    color: black;
+}
+
+.footer-list {
+	display: flex;
+	flex-direction: column;
+	gap: 0.6rem;
+	list-style: none;
+}
+
+.footer-img img {
+    width: 250px;
+    height: 150px;
+}
+
+.footer-list .footer-link {
+	color: var(--color-neutral-30);
+	transition: all 0.4s;
+}
+
+.footer-list .footer-link:hover {
+	color: #2F9E41;
+}
+
+#instagram {
+	background-color: #25d366;
+}
+
+#github {
+	background-color: #25d366;
+}
+#youtube {
+	background-color: #25d366;
+}
+#linkedin {
+	background-color: #25d366;
+}
+
+#footer-copyrighy{
+	display: flex;
+	justify-content: center;
+	background-color: var(--color-neutral-0);
+	font-size: 0.9rem;
+	padding: 1.5rem;
+	font-weight: 100;
+}
+
+@media only screen and (min-width: 1200px) {
+	
+	#header .hamburger {
+		display: none;
+	}
+	#header .nav-list ul {
+		position: initial;
+		display: block;
+		height: auto;
+		width: fit-content;
+		background-color: transparent;
+	}
+	#header .nav-list ul li {
+		display: inline-block;
+	}
+	#header .nav-list ul li a {
+		font-size: 1.8rem;
+	}
+	#cronograma .cronograma-bottom .cronograma-item {
+		flex-basis: 22%;
+		margin: 1.5%;
+	}
+}

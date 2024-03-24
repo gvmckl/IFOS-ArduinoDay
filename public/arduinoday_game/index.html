@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/arduinoday_game/css/style.css">
+    <link rel="shortcut icon" href="/public/arduinoday_site/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+     <script src="/public/arduinoday_game/js/script.js" defer></script>
+    <title>Mario Game - Arduino Day</title>
+</head>
+<body> 
+    <header>
+        <div id="cronometro">00:00:00</div>
+    </header>
+    <div class="game-buttons">
+        <button id="startButton">Start</button>
+        <button id="resetButton" style="display: none;">Reset</button>
+        <button id="homeButton">Voltar para a Home</button>
+    </div>
+    <div class="game-board">
+        <img src="./images/pipe.png" class="pipe">
+        <img src="./images/mario.gif" class="mario">
+        <img src="./images/clouds.png" class="clouds">
+    </div>
+</body>
+</html>

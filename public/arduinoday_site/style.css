@@ -250,18 +250,6 @@ p {
 	z-index: -1;
 }
 
-#cronograma .cronograma-item h2 {
-	font-size: 3rem;
-	color: white;
-	margin-bottom: 10px;
-	text-transform: uppercase;	
-}
-
-#cronograma .cronograma-item p {
-	color: white;
-    text-align: justify;
-}
-
 #about .about {
 	flex-direction: column;
 	text-align: center;
@@ -352,16 +340,9 @@ footer  {
     justify-content:space-around;
 }
 
-#instagram {
-	background-color: #25d366;
-}
-
-#github {
-	background-color: #25d366;
-}
-#youtube {
-	background-color: #25d366;
-}
+#instagram,
+#github,
+#youtube,
 #linkedin {
 	background-color: #25d366;
 }

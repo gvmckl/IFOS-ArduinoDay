@@ -16,7 +16,7 @@ startButton.addEventListener('click', () => {
 });
 
 homeButton.addEventListener('click', () => {
-    window.location.href = '/public/arduinoday_site/index.html';
+    window.location.href = '/index.html';
 });
 
 resetButton.addEventListener('click', () => {

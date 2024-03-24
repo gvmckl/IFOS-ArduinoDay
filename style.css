@@ -188,7 +188,7 @@ p {
 }
 
 #home {
-	background-image:url(img/fundo.png);
+	background-image:url(/public/arduinoday_site/img/fundo.png);
 	background-size: cover;
 	background-position: top center;
 	position: relative;

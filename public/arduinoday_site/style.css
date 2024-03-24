@@ -250,6 +250,18 @@ p {
 	z-index: -1;
 }
 
+#cronograma .cronograma-item h2 {
+	font-size: 3rem;
+	color: white;
+	margin-bottom: 10px;
+	text-transform: uppercase;	
+}
+
+#cronograma .cronograma-item p {
+	color: white;
+    text-align: justify;
+}
+
 #about .about {
 	flex-direction: column;
 	text-align: center;
